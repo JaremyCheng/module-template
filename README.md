@@ -1,5 +1,13 @@
-> 以下为模板格式, 发布前需自行替换内容
 # module-template
+
+- typescript
+- rollup 打包
+- eslint
+- lint-staged + prettier
+- 提交信息格式化 - husky + commitizen + commitlint
+- changeLog 生成
+
+> 以下为模板格式, 发布前需自行替换内容
 
 ## Installation
 

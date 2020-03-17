@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx,.vue --ignore-pattern \"bad.*\" .",
+    "prettier": "prettier -l \"./**/*\"",
+    "prettier:fix": "prettier --write -l \"./**/*\""
   },
   "keywords": [
     "template",
@@ -18,8 +21,13 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "babel-eslint": "^10.1.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-alloy": "^3.6.0",
     "husky": "^3.1.0",
     "lint-staged": "^10.0.8",
     "prettier": "1.19.1",
@@ -27,7 +35,6 @@
     "rollup-plugin-terser": "^5.3.0",
     "rollup-plugin-typescript2": "^0.26.0",
     "tslib": "^1.11.1",
-    "tslint": "^6.1.0",
     "typescript": "^3.8.3"
   },
   "dependencies": {
