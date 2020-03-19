@@ -38,7 +38,9 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "core-js": "^3.6.4"
+    "@types/lodash-es": "^4.17.3",
+    "core-js": "^3.6.4",
+    "lodash-es": "^4.17.15"
   },
   "files": [
     "package.json",
