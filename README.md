@@ -13,6 +13,14 @@ npm link module-template //模块名称
 
 ```
 
+#### 如何使用本模板
+
+```javascript
+
+npx degit https://github.com/JaremyCheng/module-template.git dirName
+
+```
+
 #### TODO
 - eslint rules补充
 
