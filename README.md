@@ -23,6 +23,7 @@ npx degit https://github.com/JaremyCheng/module-template.git dirName
 
 #### TODO
 - eslint rules补充
+- 脚手架
 
 #### 已完成
 

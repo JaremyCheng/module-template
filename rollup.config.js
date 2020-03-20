@@ -22,6 +22,12 @@ export default {
       sourcemap: sourcemap,
       file: pkg.main,
       format: 'cjs'
+    },
+    {
+      sourcemap: sourcemap,
+      file: pkg.umd,
+      format: 'umd',
+      name: pkg.name
     }
   ],
   cache: !production,

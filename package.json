@@ -1,9 +1,10 @@
 {
   "name": "jc-module-template",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a template for creating and publish a npm package",
   "main": "./dist/index.js",
   "module": "dist/index.esm.js",
+  "umd": "dist/index.umd.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "rollup -c -w",
