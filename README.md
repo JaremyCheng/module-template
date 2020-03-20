@@ -1,11 +1,31 @@
 # module-template
 
+#### 本地测试组件
+
+```javascript
+// 在当前npm模块项目下
+npm link
+//or
+sudo npm link
+
+// 在引入该模块的项目下
+npm link module-template //模块名称
+
+```
+
+#### TODO
+- eslint rules补充
+
+#### 已完成
+
 - typescript
 - rollup 打包
 - eslint
 - lint-staged + prettier
 - 提交信息格式化 - husky + commitizen + commitlint
 - changeLog 生成
+
+
 
 > 以下为模板格式, 发布前需自行替换内容
 
