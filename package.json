@@ -1,5 +1,5 @@
 {
-  "name": "module-template",
+  "name": "jc-module-template",
   "version": "1.0.0",
   "description": "a template for creating and publish a npm package",
   "main": "./dist/index.js",
@@ -22,7 +22,7 @@
     "index.js",
     "dist"
   ],
-  "author": "JaremyCheng",
+  "author": "jaremycheng",
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
