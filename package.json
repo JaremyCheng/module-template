@@ -1,6 +1,6 @@
 {
   "name": "jc-module-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a template for creating and publish a npm package",
   "main": "./dist/index.js",
   "module": "dist/index.esm.js",
