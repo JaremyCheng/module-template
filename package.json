@@ -18,6 +18,10 @@
     "npm",
     "package"
   ],
+  "files": [
+    "index.js",
+    "dist"
+  ],
   "author": "JaremyCheng",
   "license": "ISC",
   "devDependencies": {
@@ -47,10 +51,6 @@
     "core-js": "^3.6.4",
     "lodash-es": "^4.17.15"
   },
-  "files": [
-    "package.json",
-    "dist"
-  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
