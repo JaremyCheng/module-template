@@ -5,7 +5,7 @@ _site/
 *.bak
 mock/salary/vars.js
 default.vm
-
+package-lock.json
 
 # GIT/SVN generated files #
 ###########################
