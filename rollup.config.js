@@ -3,6 +3,7 @@ import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import analyze from 'rollup-plugin-analyzer';
 
 const production = !process.env.ROLLUP_WATCH;
 const sourcemap = !!process.env.sourcemap;
@@ -32,6 +33,7 @@ export default {
   ],
   cache: !production,
   plugins: [
+    production && analyze(),
     commonjs(),
     resolve(),
     typescript(),

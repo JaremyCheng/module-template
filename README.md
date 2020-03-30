@@ -1,38 +1,37 @@
-# module-template
+## module-template
 
-#### 本地测试组件
+##### 用于给基础模块建设使用的模板
+
+- **:sparkles:** 让模块更加的规范, 更容易维护;
+- **:label:** 使用TypeScript编写;
+- **:package:** 使用Rollup打包, 输出cjs, esm, umd模块;
+- **:rocket:** 规范代码及自动修改: eslint + lint-staged + prettier;
+- **:rocket:** 控制提交信息: husky + commitizen + commitlint;
+- **:loud_sound:** 根据规范自动生成changelog;
+
+##### 如何使用该模板
+
+```javascript
+$ npx degit https://github.com/JaremyCheng/module-template.git dirName
+```
+
+##### 如何进行本地测试
 
 ```javascript
 // 在当前npm模块项目下
 npm link
-//or
+// or
 sudo npm link
 
 // 在引入该模块的项目下
-npm link module-template //模块名称
-
+npm link module-template // 模块名称
 ```
 
-#### 如何使用本模板
+##### Future
 
-```javascript
-
-npx degit https://github.com/JaremyCheng/module-template.git dirName
-
-```
-
-#### TODO
-- eslint rules补充
-- 脚手架
-
-#### 已完成
-
-- typescript
-- rollup 打包
-- eslint
-- lint-staged + prettier
-- 提交信息格式化 - husky + commitizen + commitlint
-- changeLog 生成
+- **:construction_worker:** 脚手架
+- **:wrench:** eslint的规范注入
+- **:chart_with_upwards_trend:** 代码analyse
 
 
 

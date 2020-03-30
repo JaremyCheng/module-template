@@ -1,12 +1,17 @@
-import { isEmpty, forIn, cloneDeep, clone } from 'lodash-es';
+// import { isEmpty, forIn, cloneDeep, clone } from 'lodash-es';
 
-export function exoCloneDeep(obj: object) {
-  return cloneDeep(obj);
+// export function exoCloneDeep(obj: object) {
+//   return cloneDeep(obj);
+// }
+export function say() {
+  console.log('HelloWorld');
 }
-// export function getName(name:string):void {
-//   console.log(name);
-// }
-
-// export function getLife(num:number):void {
-//   console.log(num);
-// }
+export class Animal {
+  private name: string;
+  public constructor(name: string) {
+    this.name = name;
+  }
+  public getName(): string {
+    return this.name;
+  }
+}

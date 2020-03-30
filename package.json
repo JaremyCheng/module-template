@@ -2,7 +2,7 @@
   "name": "jc-module-template",
   "version": "1.0.2",
   "description": "a template for creating and publish a npm package",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "umd": "dist/index.umd.js",
   "types": "dist/index.d.ts",
@@ -43,6 +43,7 @@
     "lint-staged": "^10.0.8",
     "prettier": "1.19.1",
     "rollup": "^1.32.0",
+    "rollup-plugin-analyzer": "^3.2.2",
     "rollup-plugin-terser": "^5.3.0",
     "rollup-plugin-typescript2": "^0.26.0",
     "tslib": "^1.11.1",
@@ -50,8 +51,7 @@
   },
   "dependencies": {
     "@types/lodash-es": "^4.17.3",
-    "core-js": "^3.6.4",
-    "lodash-es": "^4.17.15"
+    "core-js": "^3.6.4"
   },
   "husky": {
     "hooks": {
