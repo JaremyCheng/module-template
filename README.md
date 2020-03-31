@@ -8,6 +8,7 @@
 - **:rocket:** 规范代码及自动修改: eslint + lint-staged + prettier;
 - **:rocket:** 控制提交信息: husky + commitizen + commitlint;
 - **:loud_sound:** 根据规范自动生成changelog;
+- **:chart_with_upwards_trend:** 代码分析: analyzer
 
 ##### 如何使用该模板
 
@@ -18,20 +19,24 @@ $ npx degit https://github.com/JaremyCheng/module-template.git dirName
 ##### 如何进行本地测试
 
 ```javascript
+// npm link方式
 // 在当前npm模块项目下
 npm link
 // or
 sudo npm link
 
 // 在引入该模块的项目下
-npm link module-template // 模块名称
+npm link moduleName // 模块名称
+
+// 软连接方式
+ln -s  /path/to/module ./node_modules/moduleName // 模块名称
+
 ```
 
 ##### Future
 
 - **:construction_worker:** 脚手架
 - **:wrench:** eslint的规范注入
-- **:chart_with_upwards_trend:** 代码analyse
 
 
 
