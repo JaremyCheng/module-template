@@ -6,6 +6,7 @@ _site/
 mock/salary/vars.js
 default.vm
 package-lock.json
+yarn.lock
 
 # GIT/SVN generated files #
 ###########################

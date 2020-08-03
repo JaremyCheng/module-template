@@ -1,15 +1,12 @@
-import path from 'path';
 import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import analyze from 'rollup-plugin-analyzer';
-
+import * as pkg from './package.json';
 const production = !process.env.ROLLUP_WATCH;
 const sourcemap = !!process.env.sourcemap;
 const compress = !!process.env.compress;
-const resolvePath = (p) => path.resolve(__dirname, p);
-const pkg = require(resolvePath(`package.json`));
 
 export default {
   input: 'src/index.ts',
